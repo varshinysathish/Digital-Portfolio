@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    max-width: 80%;
+    margin: auto;
+}
+.logo{
+    max-width: 60px;
+    border-radius: 5px;
+}
+.body{
+    padding-top: 10em;
+    padding-bottom: 10em;
+    text-align: center;
+    background-color: #313440;
+}
+#home-intro h1{
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+#home-intro p{
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+#home-intro .work{
+    color: white;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.about-content h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.contact-content{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.portfolio-content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn-branding {
+    background-color: rgb(143,124,127);
+    color: white;
+    border: 1px solid rgb(143,124,127);
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: all 100ms ease-in-out;
+}
+.btn-branding:hover{
+    background-color: #F3F1F2;
+    color: rgb(143,124,127); 
+    border: 1px solid rgb(143,124,127);
+}
+.profile-img{
+    width: 50%;
+    margin-left: 30%;
+}
+.form-container{
+    border: 2px solid rgb(143,124,127);
+    border-radius: 10px;
+    max-width: 80%;
+}
+.input-border{
+    border: 1.5px solid rgb(143,124,127);
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#enquiry-input-border{
+    border: 1.5px solid rgb(143,124,127);
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#dob-input-border{
+    border: 1.5px solid rgb(143,124,127);
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+footer{
+    text-align: center;
+    background-color:rgb(143,124,127,0.6);
+}
+footer .social-links a .Github{
+    font-size: 275%;
+    color: rgb(49,52,64,0.6);
+    transition: all 100ms ease-in-out;
+}
+footer .social-links a .Github:hover{
+    color: white;
+  }
+footer .social-links a .LinkedIn{
+    margin: 0 20px;
+    color: white;
+    background: rgb(49,52,64,0.6);
+    padding: 20% 22%;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+  }
+footer .social-links a .LinkedIn:hover{
+    color: rgb(49,52,64,0.6);
+    background: white;
+  }
+footer .copyright{
+    font-size: 0.8em;
+}
+.skill-container{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.skill-bar{
+    height: 14px;
+    background: #E4E4E4;
+    border-radius: 30px;
+}
+.skill-per{
+    height: 14px;
+    background: #8F7C7F;
+    border-radius: 30px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before
+{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) { 
+    #home-intro h1{
+        font-size: 60px;
+    }
+    #home-intro p{
+        font-size: 32px;
+    }
+    #home-intro .work{
+        font-size: 19px;
+    }
+    .profile-img{
+        margin-top: 45px;
+    }
+    .skills-container {
+        margin-top: 50px;
+    }
+    .form-container{
+        max-width: 100%;
+    }
+    .input-border{
+        max-width: 90%;
+    }
+    #enquiry-input-border{
+        padding-right: 3px;
+        padding-left: 13px;
+    }
+    #dob-input-border{
+        padding: 0px 5px;
+    }
+}
+@media screen and (max-width: 800px) { 
+    #home-intro h1{
+        font-size: 60px;
+    }
+    #home-intro p{
+        font-size: 32px;
+    }
+    #home-intro .work{
+        font-size: 19px;
+    }
+    .profile-img{
+        margin-top: 45px;
+    }
+    .skills-container {
+        margin-top: 50px;
+    }
+    .form-container{
+        max-width: 100%;
+    }
+    .input-border{
+        max-width: 70%;
+    }
+    #enquiry-input-border{
+        padding-right: 3px;
+        padding-left: 13px;
+    }
+    #dob-input-border{
+        padding: 0px 5px;
+    }
+}
+
+
+

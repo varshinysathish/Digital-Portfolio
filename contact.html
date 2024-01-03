@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous"> <!--link to bootstrap CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" 
+    crossorigin="anonymous">
+    </script> <!--link to boostrap JavaScript-->
+    <script src="https://kit.fontawesome.com/75ef3400d2.js" crossorigin="anonymous"></script> <!--link to font awesome-->
+    <title>Contact Varshiny Sathish</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top"> <!--bootstrap navbar-->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="wesbite-logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="d-flex justify-content-end"> <!--flex-end alignment not working-->
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="contact-content ms-3">
+          <h1 class="mt-5">Contact Me</h1>
+          <div class="form-container pt-4 pb-4 mt-4 mb-5">
+            <div class="form-content ms-3">
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+              <div class="row mb-4">
+                <div class="col-6">
+                    <label>Name: </label>
+                    <div>
+                    <input class="input-border" name="name" type="text" required/>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <label>Mobile Number: </label>
+                  <div>
+                  <input class="input-border" name="mobile number" type="tel" required/>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">  
+                <div class="col-6">
+                  <label>Email Address: </label>
+                  <div>
+                  <input class="input-border"  name="email address" type="email" required/>
+                </div>
+                </div>
+                  <div class="col-6">
+                    <label>Date of Birth: </label>
+                    <div>
+                    <input id="dob-input-border" name="date of birth" type="date" />
+                    </div>
+                  </div>
+              </div>
+                <div class="mb-4">
+                  <label>Enquiry:</label><br />
+                  <textarea id="enquiry-input-border" name="enquiry" rows="3" cols="30" required></textarea>
+                 </div>
+                <div>
+                    <input class="btn-branding me-2" type="submit" value="Send" />
+                    <input class="btn-branding" type="reset" value="Reset" />
+                </div>  
+            </form>
+          </div>
+          </div>
+        </div>  
+            <footer class="pt-3">
+              <div class="social-links d-flex justify-content-center mb-3">
+                  <a
+                    href="https://www.github.com/varshinysathish"
+                    target="_blank"
+                    title="GitHub Profile"
+                  >
+                  <i class="fa-brands fa-github Github"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/varshiny-sathishkumar-90088a22a/"
+                    target="_blank"
+                    title="LinkedIn Profile"
+                  >
+                  <i class="fa-brands fa-linkedin-in LinkedIn"></i>
+                  </a>
+              </div>
+              <p class="copyright">&copy; 2023 Varshiny Sathish. All rights reserved.</p>
+            </footer>
+        </div>
+</body>
+</html>
